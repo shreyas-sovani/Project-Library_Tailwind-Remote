@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Library E-Resources</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body
+    class="bg-gradient-to-r from-orange-500 to-pink-500"
+>
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Central Library E-Resources</h1>
+            <nav>
+                <a href="#" class="px-4 py-2 hover:text-gray-200">Home</a>
+                <a href="#" class="px-4 py-2 hover:text-gray-200">About</a>
+                <a href="login.html" class="px-4 py-2 hover:text-gray-200">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto my-6">
+      <div class="flex justify-center">
+          <input 
+              id="search"
+              type="text" 
+              placeholder="Search for books..." 
+              class="w-1/2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+         
+  </div>
+
+  <div class="container mx-auto my-8">
+    <h2 class="text-2xl font-semibold text-center mb-4">Book Collection</h2>
+
+    <div id="book-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+  </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 ASEP Project . All Rights Reserved.</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-400">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Book Details Banner -->
+<div id="book-banner" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
+  <div class="bg-white rounded-lg shadow-lg p-8 max-w-4xl w-full relative">
+      <!-- Close Button -->
+      <button id="close-banner" class="absolute top-2 right-2 bg-red-500 text-white rounded-full px-3 py-1 hover:bg-red-600">
+          X
+      </button>
+      
+
+      <!-- Book Details Content -->
+      <div class="flex flex-col md:flex-row">
+          <img id="banner-image" src="" alt="Book Image" class="w-40 h-56 object-cover rounded-lg mx-auto md:mx-0 md:mr-6">
+          <div class="flex-1">
+              <h2 id="banner-title" class="text-2xl font-bold text-gray-800 mb-2"></h2>
+              <p id="banner-author" class="text-gray-600 mb-4"></p>
+              <p id="banner-description" class="text-gray-700 leading-relaxed">
+                 
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+</body>
+
+
+
+  </head>
+  
+  <body>
+    <script src="script.js"></script>
+  </body>
+</html>
